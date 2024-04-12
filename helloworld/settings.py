@@ -27,7 +27,7 @@ DEBUG = True
 
 # A list of strings representing the host/domain names that this Django site can serve.
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
-
+STATIC_ROOT = 'static'
 
 # Application definition
 
@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'helloworld.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'helloworld.db'),
+        'NAME': '/data/helloworld.db,
     }
 }
 
