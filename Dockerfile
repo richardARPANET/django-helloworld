@@ -17,7 +17,7 @@ COPY . .
 RUN mkdir -p /data
 
 # Create the helloworld.db file if it doesn't exist
-RUN touch /data/helloworld.db || true
+RUN python -c "import os; os.makedirs('/data', exist_ok=True); open('/data/helloworld.db', 'a').close()"
 
 # Collect the Django static files
 RUN python manage.py collectstatic --no-input
