@@ -1,6 +1,11 @@
 # Use the official Python image as the base image
 FROM python:3.9-slim-buster
 
+ENV POSTGRES_DB=${POSTGRES_DB}
+ENV POSTGRES_HOST=${POSTGRES_HOST}
+ENV POSTGRES_PORT=${POSTGRES_PORT}
+ENV POSTGRES_USER=${POSTGRES_USER}
+ENV POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
 # Set the working directory to /app
 WORKDIR /app
 
