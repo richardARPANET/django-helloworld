@@ -73,8 +73,6 @@ WSGI_APPLICATION = 'helloworld.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
-from pathlib import Path
-Path('/data/helloworld.db').touch()
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
