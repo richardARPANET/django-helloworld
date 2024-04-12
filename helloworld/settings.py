@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'helloworld.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': '/data/helloworld.db,
+        'NAME': '/data/helloworld.db',
     }
 }
 
